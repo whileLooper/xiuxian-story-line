@@ -2,6 +2,8 @@ $bg: #4D4545;
 
 $color: #edeeef;
 
+$circleColor: #ebf3f4;
+
 $font-stack: 'Lato', sans-serif;
 
 html,
@@ -26,9 +28,9 @@ p {
     
 .circle {
     font-weight: bold;
-    padding: 15px 20px;
-    border-radius: 50%;
-    background-color: $color;
+    padding: 10px 15px;
+    border-radius: 10%;
+    background-color: $circleColor;
     color: $bg;
     max-height: 50px;
     z-index: 2;
