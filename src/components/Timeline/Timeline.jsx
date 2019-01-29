@@ -6,7 +6,7 @@ import RightSection from './RightSection';
 const StoryTimeline = props => (
   <div className="container-fluid blue-bg">
     <div className="container">
-      <h1 className="pb-3 pt-2 text-center">凡人修仙传 年历表 🗓</h1>
+      <h1 className="pb-3 pt-2 text-center">凡人修仙传 年历表</h1>
       {props.timeline.map((event, i) =>
         i % 2 === 0 ? (
           <RightSection
