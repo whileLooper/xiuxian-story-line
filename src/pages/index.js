@@ -6,6 +6,7 @@ import Post from 'templates/Post';
 import Meta from 'components/Meta';
 import Layout from 'components/Layout';
 import Timeline from 'components/Timeline/Timeline';
+import timeline from '../timeline.json';
 
 const BlogIndex = ({ data, location }) => {
   const posts = get(data, 'remark.posts');
@@ -21,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
           key={i}
         />
       ))} */}
-      <Timeline />
+      <Timeline timeline={timeline} />
     </Layout>
   );
 };
