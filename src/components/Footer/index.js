@@ -1,20 +1,20 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import './style.scss'
+import { Link } from 'gatsby';
+import React from 'react';
+import './style.scss';
+import Github from '../../images/github.svg';
 
 const Footer = ({ author, title }) => (
   <div className="footer">
     <div className="container">
-      <hr className="border-primary" />
-      <p>
-        {title}
-        <Link to="/profile/">
-          <br />
-          <strong>{author}</strong> on Profile
-        </Link>
-      </p>
+      <a
+        href="https://github.com/whileLooper/xiuxian-story-line"
+        className="github-corner"
+        aria-label="View source on GitHub"
+      >
+        <img className="play" src={Github} alt="" />
+      </a>
     </div>
   </div>
-)
+);
 
-export default Footer
+export default Footer;
